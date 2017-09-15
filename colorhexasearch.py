@@ -65,5 +65,5 @@ class ColorHexaSearch(sublime_plugin.TextCommand):
 
       fmt = getFmt(txt)
       col = toHex(txt, fmt)
-      url = "http://www.colorhexa.com/{}/".format(col)
+      url = "http://www.colorhexa.com/{}".format(col)
       openSite(url)
