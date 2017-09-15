@@ -21,7 +21,7 @@ def getFmt(txt):
    return fmt
 
 def toHex(txt, fmt):
-   """COnverts the color to hex format
+   """Converts the color to hex format
    
    [description]
    
@@ -65,5 +65,5 @@ class ColorHexaSearch(sublime_plugin.TextCommand):
 
       fmt = getFmt(txt)
       col = toHex(txt, fmt)
-      print(toHex(txt, fmt))
       url = "http://http://www.colorhexa.com/{}/".format(col)
+      openSite(url)
